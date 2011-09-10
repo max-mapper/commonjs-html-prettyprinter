@@ -1,0 +1,13 @@
+{ "name": "html"
+, "version": "0.0.1"
+, "engines": [ "node >=0.4.0" ]
+, "description": "HTML pretty printer."
+, "author": "Max Ogden <max@maxogden.com> (http://maxogden.com)"
+, "contributors": [ "Nochum Sossonko <nsossonko@hotmail.com>", "Einar Lielmanis <elfz@laacz.lv>" ]
+, "keywords" : [ "html", "tabifier", "beautifier", "prettyprinter", "prettifier", "pretty", "command", "shell" ]
+, "repository":
+  { "type" : "git"
+  , "url" : "https://github.com/maxogden/commonjs-html-prettyprinter.git"
+  }
+, "bin" : { "html" : "./bin/html.js" }
+}
