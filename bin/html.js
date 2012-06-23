@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var sys = require("sys"),
+var util = require('util'),
     html = require("../lib/html");
 
 var args = process.argv.slice(0);
