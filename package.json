@@ -10,4 +10,7 @@
   , "url" : "https://github.com/maxogden/commonjs-html-prettyprinter.git"
   }
 , "bin" : { "html" : "./bin/html.js" }
+, "devDependencies": { "rigger": "0.3.x" }
+, "scripts" : { "build": "./node_modules/.bin/rig src/html.js > lib/html.js" }
+, "main" : "lib/html.js"
 }
