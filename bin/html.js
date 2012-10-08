@@ -19,5 +19,5 @@ stdin.on("data", function(chunk) {
 });
 
 stdin.on("end", function() {
-  process.stdout.write(html.prettyPrint(data))
+  process.stdout.write(html.prettyPrint(data, {indent_size: 2}))
 });

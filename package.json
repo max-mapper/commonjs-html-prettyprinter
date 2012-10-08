@@ -1,5 +1,5 @@
 { "name": "html"
-, "version": "0.0.2"
+, "version": "0.0.3"
 , "engines": [ "node >=0.4.0" ]
 , "description": "HTML pretty printer."
 , "author": "Max Ogden <max@maxogden.com> (http://maxogden.com)"
