@@ -3,14 +3,13 @@
 var sys = require("sys")
 var html = require("../lib/html")
 var fs = require('fs')
-var glob = require('glob')
 
 var args = process.argv.slice(0);
 // shift off node and script name
 args.shift()
 args.shift()
 
-if (args.length > 0) processFiles(args[0])
+if (args.length > 0) processFiles(args)
 else readStdin()
 
 function readStdin() {
@@ -28,17 +27,14 @@ function readStdin() {
   })
 }
 
-function processFiles(name) {
-  if (name.match(/\*/)) {
-    glob(name, function(err, files) {
-      if (err) return console.log(err)
-      files.map(function(filename) {
-        prettifyFile(filename)
-      })
+function processFiles(files) {
+  if (files.length > 1) {
+    files.map(function(filename) {
+      prettifyFile(filename)
     })
     return
   }
-  var str = fs.readFileSync(name).toString()
+  var str = fs.readFileSync(files[0]).toString()
   process.stdout.write(prettify(str))
 }
 
