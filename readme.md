@@ -1,6 +1,6 @@
-# commonjs html prettyprinter
+# html prettyprinter
 
-A commonjs port of beautify-html.js by Nochum Sossonko which is based on jsbeautifier by Einar Lielmanis
+A node port of beautify-html.js by Nochum Sossonko which is based on jsbeautifier by Einar Lielmanis
 
 ## Installation
 
@@ -27,6 +27,10 @@ returns:
       </span>
   </h2>
 ````
+
+`html foo.html` will write the prettified version to `stdout`.
+
+`html *.html` will *update in place* all matching html files with their prettified versions.
 
 ## Advanced usage
 

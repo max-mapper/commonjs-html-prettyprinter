@@ -1,5 +1,5 @@
 { "name": "html"
-, "version": "0.0.4"
+, "version": "0.0.5"
 , "engines": [ "node >=0.4.0" ]
 , "description": "HTML pretty printer."
 , "author": "Max Ogden <max@maxogden.com> (http://maxogden.com)"
@@ -10,7 +10,7 @@
   , "url" : "https://github.com/maxogden/commonjs-html-prettyprinter.git"
   }
 , "bin" : { "html" : "./bin/html.js" }
-, "devDependencies": { "rigger": "0.3.x" }
+, "dependencies": { "glob": "3.1.13" }
 , "scripts" : { "build": "./node_modules/.bin/rig src/html.js > lib/html.js" }
 , "main" : "lib/html.js"
 }
