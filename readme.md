@@ -50,14 +50,12 @@ Now when you paste your clipboard into an editor you will get nice, pretty print
 
 ![After pretty printing](https://github.com/maxogden/commonjs-html-prettyprinter/raw/master/img/after.png)
 
-## Building
+## Upgrading
 
-To rebuild the html module to use the latest version of [js-beautifier], see the following instructions:
+grab the newest `beautify-html.js` from [js-beautifier](https://github.com/einars/js-beautify) and drop it into `lib/` as `html.js`. then add the following code to the bottom of `html.js`:
 
-- clone this repo: `git clone git://github.com/maxogden/commonjs-html-prettyprinter.git`
-- install dev dependencies: `npm install`
-- run the build: `npm run-script build`
+```javascript
+  module.exports = { prettyPrint: style_html }
+```
 
-At this point, the `lib/html.js` file should have been updated with the latest copy of the source from [js-beautifier]
-
-[js-beautifier]: https://github.com/einars/js-beautify
+BSD LICENSE
