@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-var sys = require("sys")
 var html = require("../lib/html")
 var fs = require('fs')
 
