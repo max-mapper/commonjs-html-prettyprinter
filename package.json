@@ -1,6 +1,6 @@
 {
   "name": "html",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "HTML pretty printer CLI utility (based on jsbeautifier)",
   "author": "Max Ogden <max@maxogden.com> (http://maxogden.com)",
   "contributors": [
