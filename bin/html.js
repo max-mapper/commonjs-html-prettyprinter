@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-var sys = require("sys")
 var html = require("../lib/html")
 var fs = require('fs')
+var concat = require('concat-stream')
 
-var args = process.argv.slice(0);
+var args = process.argv.slice(0)
 // shift off node and script name
 args.shift()
 args.shift()
@@ -14,17 +14,9 @@ else readStdin()
 
 function readStdin() {
   var stdin = process.openStdin()
-  var data = ""
-
-  stdin.setEncoding("utf8")
-
-  stdin.on("data", function(chunk) {
-    data += chunk
-  })
-
-  stdin.on("end", function() {
-    process.stdout.write(html.prettyPrint(data, {indent_size: 2}))
-  })
+  stdin.pipe(concat(function concatted (buff) {
+    process.stdout.write(html.prettyPrint(buff.toString(), {indent_size: 2}))
+  }))
 }
 
 function processFiles(files) {
