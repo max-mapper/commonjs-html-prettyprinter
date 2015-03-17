@@ -27,5 +27,18 @@
   "bin": {
     "html": "./bin/html.js"
   },
-  "main": "lib/html.js"
+  "main": "lib/html.js",
+  "bugs": {
+    "url": "https://github.com/maxogden/commonjs-html-prettyprinter/issues"
+  },
+  "homepage": "https://github.com/maxogden/commonjs-html-prettyprinter",
+  "dependencies": {
+    "glob": "^3.1.13",
+    "rigger": "^0.3.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "BSD"
 }
