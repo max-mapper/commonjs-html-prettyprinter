@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/maxogden/commonjs-html-prettyprinter",
   "dependencies": {
-    "concat-stream": "^1.4.7",
+    "concat-stream": "^1.4.7"
   },
   "devDependencies": {},
   "scripts": {
